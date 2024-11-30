@@ -1,7 +1,50 @@
-body {
+html {
     margin: 0;
     padding: 0;
     font-family: verdana;
     background-color: azure;
     color:rgb(0, 0, 46);
+}
+
+body {
+    margin: 20px;
+    padding: 5px;
+}
+
+section {
+    margin: 120px;
+    padding: 10px;
+}
+
+
+nav {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.home {
+    background-image: url('../home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+div {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
 }
