@@ -1,19 +1,17 @@
 html {
-    margin: 0;
-    padding: 0;
     font-family: verdana;
     background-color: azure;
     color:rgb(0, 0, 46);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
-body {
-    margin: 20px;
-    padding: 5px;
-}
-
-section {
-    margin: 120px;
-    padding: 10px;
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -25,25 +23,78 @@ nav {
     text-align: center;
     z-index: 10;
     position: absolute;
+    align-items: center;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     margin: 20px;
     padding-top: 10px;
     color: rgb(255, 255, 255);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+    color: rgb(108, 238, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+nav img {
+    height: 40px;
+    width: auto;
+    margin: 0 15px;
+    vertical-align: middle;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
 }
 
 #home {
-    background-image: url('../assets/home.png');
+    background-image: url('../assets/home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+    width: 100vw;
     padding: 0;
-    z-index: -2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    flex-direction: column;
+    overflow: visible;
 }
+
+#home h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    z-index: 1;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    transform: translateY(-30px);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0.577)); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent
+}
+
+#banner {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 3; 
+    filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));  
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    margin-bottom: -170px;
+    
+}
+
 
 p {
     border-radius: 10px;
@@ -51,4 +102,42 @@ p {
     color: white;
     margin: 10px;
     padding: 10px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #home h1 {
+        font-size: 2.5rem; 
+    }
+
+    nav a {
+        font-size: 0.9rem; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column; 
+        padding: 15px 0;
+    }
+
+    nav a {
+        margin: 5px 0; 
+    }
+
+    #home h1 {
+        font-size: 2rem;
+        letter-spacing: 1px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #home h1{
+        font-size: 1.5rem;
+        padding: 0 5px; 
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
 }
