@@ -68,11 +68,11 @@ nav img {
 }
 
 #home h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
     color: white;
     font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     z-index: 1;
     position: relative;
     font-family: 'Roboto', sans-serif;
@@ -83,6 +83,10 @@ nav img {
     color: transparent
 }
 
+#home h1:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4);
+}
+
 #banner {
     position: absolute;
     bottom: 0;
@@ -91,7 +95,7 @@ nav img {
     filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.3));  
     object-fit: cover;
     transition: transform 0.3s ease-out;
-    margin-bottom: -170px;
+    margin-bottom: -190px;
     
 }
 
