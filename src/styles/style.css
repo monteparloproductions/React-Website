@@ -1,0 +1,54 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+    background-color: azure;
+    color:rgb(0, 0, 46);
+}
+
+body {
+    margin: 20px;
+    padding: 5px;
+}
+
+section {
+    margin: 120px;
+    padding: 10px;
+}
+
+
+nav {
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    z-index: 10;
+    position: absolute;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    margin: 20px;
+    padding-top: 10px;
+    color: rgb(255, 255, 255);
+}
+
+#home {
+    background-image: url('../assets/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0;
+    z-index: -2;
+}
+
+p {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
