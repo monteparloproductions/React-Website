@@ -1,2 +1,4 @@
 # React Website
+
+npm start
  
