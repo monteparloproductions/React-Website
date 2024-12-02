@@ -1,6 +1,6 @@
 {
-  "name": "react-website",
   "homepage": "https://monteparloproductions.github.io/React-Website",
+  "name": "react-website",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
