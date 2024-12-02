@@ -257,7 +257,7 @@ nav img:hover {
 }
 
 .program-card img {
-    width: 6rem;
+    width: 5rem;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -306,13 +306,438 @@ nav img:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+
+#cta {
+    height: 30vh;
+    width: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin: 0 auto; 
+    background-color: black;
+}
+
+
+#button {
+    background-color: #0b3357;
+    color: white;
+    font-size: 6.25rem;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#button:hover {
+    background-color: #1a4f87;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7);
+}
+
+#button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#contact {
+    background-color: rgb(11, 51, 87);
+    color: white;
+    padding: 50px 20px; 
+    width: 100%;
+}
+
+#contact h2 {
+    text-align: center;
+}
+#contact div {
+    padding: 10px;
+}
+
+.contact-info {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#links {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+#contact img {
+    width: 40px; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.596));
+}
+
+#contact img:hover {
+    transform: scale(1.1); 
+    filter: drop-shadow(2px 2px 6px rgb(108, 238, 255));
+}
+
+
+
+#Faculty {
+    background-color: white;
+    color: rgb(11, 51, 87);
+    padding: 50px 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, auto);
+}
+
+#Faculty h2 {
+    font-size: 4rem;
+    padding-bottom: 25px;
+    grid-column: span 5;
+ }
+
+
+#Faculty p {
+    background-color: rgb(11, 51, 87);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 3, 34, 0.697);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Faculty p:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.7);
+    transform: translateY(-10px);
+}
+
+#Faculty {
+    background-color: white;
+    color: rgb(11, 51, 87);
+    padding: 50px 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    grid-template-rows: repeat(2, auto);
+}
+
+#Faculty h2 {
+    font-size: 4rem;
+    padding-bottom: 25px;
+    grid-column: span 5;
+ }
+
+
+#Faculty p {
+    background-color: rgb(11, 51, 87);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 3, 34, 0.697);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Faculty a {
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+    padding: 2px;
+}
+#Faculty a:hover {
+    color: rgba(0, 255, 255, 0.7);
+}
+
+footer {
+    background-color: rgb(171, 188, 200);
+    color: rgb(0, 0, 0);
+    padding: 10px 5px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    font-size: 0.85rem;
+}
+
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 4rem;
+    }
+
+    #mission h2 {
+        font-size: 2rem;
+    }
+
+    #itasp h2 {
+        font-size: 2rem;
+    }
+
+    #itasp > div {
+        width: calc(100% - 30px);
+        margin: 10px 0;
+    }
+
+    #itasp-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
     .program-grid {
         grid-template-columns: 1fr;
         width: 90%;
     }
 
-    .program-card img {
+    #cta {
+        height: 25vh;
+    }
+
+    #button {
+        font-size: 4rem;
+        padding: 10px 20px;
+    }
+
+    #Faculty {
+        grid-template-columns: 1fr;
+        padding: 20px 10px;
+    }
+}
+
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #home h1 {
+        font-size: 5rem;
+    }
+
+    #mission h2 {
+        font-size: 2.5rem;
+    }
+
+    #itasp h2 {
+        font-size: 2.5rem;
+    }
+
+    #itasp > div {
+        width: calc(45% - 30px);
+    }
+
+    #itasp-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cta {
+        height: 25vh;
+    }
+
+    #button {
+        font-size: 5rem;
+        padding: 15px 30px;
+    }
+
+    #Faculty {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 30px;
+    }
+}
+
+/* Larger devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    #home h1 {
+        font-size: 5.5rem;
+    }
+
+    #mission h2 {
+        font-size: 2.8rem;
+    }
+
+    #itasp h2 {
+        font-size: 2.8rem;
+    }
+
+    #itasp > div {
+        width: calc(33.33% - 30px);
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #cta {
+        height: 30vh;
+    }
+
+    #button {
+        font-size: 5.5rem;
+        padding: 20px 40px;
+    }
+
+    #Faculty {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 40px;
+    }
+}
+
+/* Desktops (1025px and up) */
+@media (min-width: 1025px) {
+    nav {
+        justify-content: space-evenly;
+    }
+
+    #home h1 {
+        font-size: 6rem;
+    }
+
+    #mission h2 {
+        font-size: 3rem;
+    }
+
+    #itasp h2 {
+        font-size: 3rem;
+    }
+
+    #itasp > div {
+        width: calc(20% - 30px);
+    }
+
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #cta {
+        height: 30vh;
+    }
+
+    #button {
+        font-size: 6.25rem;
+        padding: 15px 30px;
+    }
+
+    #Faculty {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        margin-bottom: 0;
+    }
+
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+
+    }
+
+    #home h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 300px;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    #mission, #itasp, #itbasp, #cta, #Faculty, #contact {
+        padding: 20px;
         width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    #mission h2, #itasp h2, #itbasp h2, #Faculty h2 {
+        font-size: 2rem;
+    }
+
+    #itasp > div {
+        width: 100% !important;
+        margin: 10px 0;
+    }
+
+    .program-grid {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    #button {
+        font-size: 4rem;
+        padding: 10px 20px;
+    }
+
+    #contact .social-media-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #Faculty {
+        padding: 0;
+    }
+
+    #Faculty h2 {
+        margin-top: 30px;
+    } 
+
+    #Faculty p {
+        text-align: center;
     }
 }

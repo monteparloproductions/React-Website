@@ -3,7 +3,14 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import ITASP from './components/itasp'; 
 import ITBASP from './components/itbasp'; 
+import Button from './components/Button'; 
+import Contact from './components/Contact'; 
+import Footer from './components/Footer'; 
+import Faculty from './components/Faculty';
 import './styles/style.css';
+
+
+
 
 function App() {
   return (
@@ -12,6 +19,10 @@ function App() {
       <Home /> 
       <ITASP />
       <ITBASP />
+      <Faculty />
+      <Button />
+      <Contact />
+      <Footer />
     </div>
   );
 }
